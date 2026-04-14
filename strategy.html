@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy Story — SNHU Research</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --surface: rgba(30, 41, 59, 0.8);
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #60a5fa;
+    --accent2: #a78bfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+  }
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  strong { color: #f1f5f9; }
+  em { color: var(--muted); }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid rgba(96, 165, 250, 0.15);
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  .stat-card .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-card .label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  th, td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.1);
+  }
+  th {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  td { color: var(--text); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(96, 165, 250, 0.1);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">&larr; Back to SNHU Research</a>
+  <h1>Strategy Story</h1>
+  <p class="subtitle">Data-driven insights on where SNHU should focus next</p>
+  <div class="research-strategy-analysis">
+  <h1 style="text-align: center; color: #004d9c;">SNHU Research Strategy Analysis: Charting a Course for Impact</h1>
+  <p style="text-align: center; font-style: italic; color: #555;">Data-Driven Insights for Southern New Hampshire University's Research Future</p>
+
+  <p>Southern New Hampshire University (SNHU) has demonstrated a dynamic evolution in its research output, moving from a nascent scholarly presence to a rapidly expanding contributor across diverse fields. This analysis leverages comprehensive data from OpenAlex to identify key strengths, emerging opportunities, and strategic pathways to amplify SNHU's research influence and align it with institutional values and future aspirations.</p>
+
+  <h2>Key Research Metrics</h2>
+  <p>An overview of SNHU's research corpus reveals significant growth and areas of current strength:</p>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="number">832</div><div class="label">Total Papers Published (2001-2026)</div></div>
+    <div class="stat-card"><div class="number">4451</div><div class="label">Total Citations Received</div></div>
+    <div class="stat-card"><div class="number">5.35</div><div class="label">Average Citations Per Paper</div></div>
+    <div class="stat-card"><div class="number">1444</div><div class="label">Unique Authors</div></div>
+    <div class="stat-card"><div class="number">115 (proj.)</div><div class="label">Highest Projected Papers (2025)</div></div>
+    <div class="stat-card"><div class="number">251</div><div class="label">Highest Cited Paper (Single)</div></div>
+  </div>
+
+  <p>The projected surges in paper output for 2025 (115 papers) and 2026 (104 papers) signal an institutional commitment to scaling research activity, presenting both an exciting opportunity and a need for strategic focus to ensure quality and impact keep pace with quantity.</p>
+
+  <h2>Act I: Priority Bets – Leveraging Strengths and High-Growth Trajectories</h2>
+  <p>SNHU's research portfolio shows clear areas of established strength and exciting, rapidly emerging fields. Prioritizing investment in these domains will yield the greatest returns in terms of academic visibility and institutional impact.</p>
+
+  <h3>1. Core Strength & Expanding Influence: Social Sciences & Education</h3>
+  <p>The Social Sciences consistently form the bedrock of SNHU's research, boasting the highest total papers (208) and featuring prominently among the most-cited works. This includes the top-cited paper, "Quality of Life, Event Impacts, and Mega-Event Support among South African Residents" (251 cites, 2013). Within this broad field, "Education" stands out as a critical subfield with 59 papers, directly aligning with SNHU's institutional mission as a leader in online and flexible learning.</p>
+  <ul>
+    <li><b>Strategic Focus:</b> Reinforce leadership in "Online and Blended Learning" (17 papers) and "Online Learning and Analytics" (7 papers). These topics are intrinsically linked to SNHU's identity and competitive advantage.</li>
+    <li><b>Growth Opportunity:</b> Foster research into "Higher Education Research Studies" (5 papers) and "Student Assessment and Feedback" (5 papers), leveraging SNHU’s vast experience in diverse learning modalities. This area offers both academic impact and practical institutional value.</li>
+    <li><b>Recent Trends:</b> Social Sciences continues its robust output, with 22 papers in 2023, 21 in 2024, and a projected 23 in 2025, demonstrating sustained activity.</li>
+  </ul>
+
+  <h3>2. Strategic Growth in Applied Tech & Cognition: Computer Science, Neuroscience, & AI</h3>
+  <p>This interdisciplinary cluster represents SNHU's most dynamic growth frontier. Computer Science is the second-largest field (116 papers) with strong subfields like Artificial Intelligence (43 papers) and Information Systems (36 papers). However, the truly remarkable projection is in Neuroscience, set to surge from sporadic contributions to a staggering 33 papers in 2026, matched by Computer Science's projected 21 papers in 2025 and 18 in 2026. This indicates a significant institutional investment or burgeoning talent in these areas.</p>
+  <ul>
+    <li><b>Strategic Focus:</b> Capitalize on the explosive projected growth in Neuroscience and Computer Science. Direct investment towards emerging themes like "Embodied and Extended Cognition" (25 papers), "Tactile and Sensory Interactions" (9 papers), and "AI-based Problem Solving and Planning" (8 papers).</li>
+    <li><b>Impact Potential:</b> Leverage the existing highly-cited Neuroscience paper ("A Systematic Literature Review of the Application of Information Communication Technology for Visual" - 64 cites, 2016) and Computer Science paper ("Could robots become authentic companions in nursing care?" - 48 cites, 2015) to guide future high-impact work.</li>
+    <li><b>Interdisciplinary Advantage:</b> Encourage explicit cross-pollination between Computer Science, Psychology (especially Cognitive Neuroscience, 55 papers), and Engineering to create a unique SNHU niche in human-computer interaction, AI ethics, and cognitive applications.</li>
+  </ul>
+
+  <h3>3. Impact-Driven Business & Management</h3>
+  <p>Business, Management and Accounting is a consistent contributor (81 papers), and crucially, demonstrates a strong capacity for high-impact research. This field houses three of SNHU's top ten most-cited papers: "How Green Marketing Can Create a Sustainable Competitive Advantage for a Business" (115 cites, 2013), "Integrating quality function deployment and benchmarking to achieve greater profitability" (91 cites, 2006), and "Strategic Planning Models for Reverse and Closed-Loop Supply Chains" (88 cites, 2008). These papers highlight practical, high-relevance topics.</p>
+  <ul>
+    <li><b>Strategic Focus:</b> Maintain and amplify research in areas that address contemporary business challenges and sustainability. Topics like "International Business and FDI" (9 papers), "Sustainable Supply Chain Management" (6 papers), and "Big Data and Business Intelligence" (7 papers) offer clear avenues for continued relevance and impact.</li>
+    <li><b>Application-Oriented Research:</b> Emphasize research that directly informs practice and policy, aligning with SNHU’s focus on applied, career-relevant education.</li>
+    <li><b>Subfield Strength:</b> Build upon strengths in "Strategy and Management" (28 papers) and "Organizational Behavior and Human Resource Management" (14 papers).</li>
+  </ul>
+
+  <h2>Act II: Internal Collaboration – Forging Interdisciplinary Pathways</h2>
+  <p>SNHU's diverse research profile is ripe for strategic internal collaborations, which can amplify impact, attract new funding, and foster innovation by breaking down traditional disciplinary silos.</p>
+  <p>Potential inter-departmental "Convergence Zones":</p>
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Convergence Zone</th>
+          <th>Key Fields & Subfields</th>
+          <th>Representative Topics</th>
+          <th>Potential Outcomes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Online Pedagogy & Educational Technology</b></td>
+          <td>Social Sciences (Education), Computer Science (AI, Information Systems), Psychology (Developmental & Educational)</td>
+          <td>Online and Blended Learning, Online Learning and Analytics, Student Assessment and Feedback, Educational Games and Gamification, AI in Healthcare and Education</td>
+          <td>Innovations in SNHU's core online learning model, new educational tools, improved student success metrics.</td>
+        </tr>
+        <tr>
+          <td><b>Human-Computer Interaction & Cognitive Science</b></td>
+          <td>Neuroscience (Cognitive Neuroscience), Computer Science (AI, Computer Networks), Psychology (Social Psychology), Engineering</td>
+          <td>Embodied and Extended Cognition, Tactile and Sensory Interactions, Social Robot Interaction and HRI, AI-based Problem Solving</td>
+          <td>Groundbreaking research in AI interaction, assistive technologies, and understanding human-technology interfaces.</td>
+        </tr>
+        <tr>
+          <td><b>Sustainable Business & Data Analytics</b></td>
+          <td>Business, Management and Accounting (Strategy & Management), Economics, Computer Science (Big Data), Environmental Science</td>
+          <td>Sustainable Supply Chain Management, International Business and FDI, Big Data and Business Intelligence</td>
+          <td>Data-driven insights for sustainable practices, economic development, and competitive advantage in global markets.</td>
+        </tr>
+        <tr>
+          <td><b>Health, Psychology & Technology Applications</b></td>
+          <td>Medicine, Health Professions, Psychology (Clinical, Social), Computer Science (AI in Healthcare)</td>
+          <td>Artificial Intelligence in Healthcare and Education, Autism Spectrum Disorder Research, Counseling Practices and Supervision, General Health Professions</td>
+          <td>Development of tech-enhanced healthcare solutions, psychological interventions, and improving patient outcomes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>These zones leverage SNHU's existing intellectual capital and can create unique research identities that attract external partnerships and funding.</p>
+
+  <h2>Act III: White Space Analysis – Identifying High-Potential, Under-Explored Areas</h2>
+  <p>While building on strengths is crucial, strategic foresight requires identifying "white spaces" – areas where SNHU currently has low output but high future potential, often indicated by sudden projected growth or alignment with global trends.</p>
+
+  <h3>1. The Neuroscience Anomaly: A Future Powerhouse?</h3>
+  <p>The projected 33 papers in Neuroscience for 2026 is an extraordinary leap from its historical average of 1-3 papers per year. If these projections hold, Neuroscience is not just an emerging field but a targeted institutional investment. Coupled with "Cognitive Neuroscience" already being a top subfield (55 papers), SNHU should proactively investigate the drivers of this growth. Is it a new research center, a significant faculty hire, or a new academic program? Understanding and supporting this surge is paramount.</p>
+  <ul>
+    <li><b>Recommendation:</b> Conduct an internal audit to understand the source of the projected Neuroscience output. Allocate resources to support this growth, especially given its strong link to "Embodied and Extended Cognition" (25 papers) and "Tactile and Sensory Interactions" (9 papers), which can intersect with Computer Science and Psychology.</li>
+  </ul>
+
+  <h3>2. Physics and Astronomy: A New Horizon</h3>
+  <p>Similar to Neuroscience, the projection of 11 papers in Physics and Astronomy for 2026 is notable given its almost non-existent historical presence. This signals a new research direction or a significant faculty addition. This "white space" offers a fresh opportunity, potentially in areas like data analysis for astronomical research or physics education.</p>
+  <ul>
+    <li><b>Recommendation:</b> Explore the strategic intent behind the emergence of Physics and Astronomy. How does it align with SNHU's broader mission? Are there opportunities for cross-disciplinary research, perhaps in computational physics or data science applications?</li>
+  </ul>
+
+  <h3>3. Environmental Science: Under-Tapped Impact</h3>
+  <p>With only 22 total papers, Environmental Science currently has a modest presence. However, it generated a highly cited paper, "Pro‐environmental Behavior in the Workplace: A Review of Empirical Studies and Directions for Future" (83 cites, 2015). This indicates a capacity for high impact that is not yet reflected in volume. Given global sustainability challenges, this field has immense societal relevance.</p>
+  <ul>
+    <li><b>Recommendation:</b> Investigate the potential to grow research in Environmental Science, perhaps focusing on sustainability in business ("Sustainable Supply Chain Management" - 6 papers), environmental education, or the behavioral aspects of climate action.</li>
+  </ul>
+
+  <h2>Act IV: Quality & Impact – Elevating SNHU's Research Footprint</h2>
+  <p>While SNHU shows impressive growth in publication volume, the average citation rate of 5.35 per paper suggests room for improvement in overall research impact. Strategic interventions can significantly boost the visibility and influence of SNHU's scholarly contributions.</p>
+
+  <h3>1. Focus on High-Impact Publication Avenues</h3>
+  <p>Many of SNHU's most-cited papers, such as the Decision Sciences paper on "M-payment service" (216 cites) or the Business paper on "Green Marketing" (115 cites), tackle contemporary, broadly relevant issues. Encouraging researchers to target journals known for high impact factors and broad readership will increase citation potential.</p>
+  <ul>
+    <li><b>Recommendation:</b> Provide training and resources for identifying and submitting to top-tier journals. Encourage faculty to consider high-quality review articles and meta-analyses, which tend to garner more citations.</li>
+  </ul>
+
+  <h3>2. Cultivate Interdisciplinary Relevance</h3>
+  <p>Research that spans traditional disciplinary boundaries often attracts a wider audience. The highly cited Neuroscience paper on "Information Communication Technology for Visual" (64 cites) demonstrates this, bridging neuroscience with technology. Similarly, "AI in Healthcare and Education" (6 papers) and "Social Robot Interaction" (5 papers) have inherent cross-field appeal.</p>
+  <ul>
+    <li><b>Recommendation:</b> Actively promote and reward interdisciplinary collaboration. Fund seed grants for projects involving multiple departments or fields, focusing on global challenges that necessitate multi-faceted approaches.</li>
+  </ul>
+
+  <h3>3. Emphasize Open Access and Dissemination</h3>
+  <p>Making research freely available significantly increases its discoverability and potential for citation. While not explicit in the data, a strong Open Access policy and robust institutional repository can boost SNHU's impact.</p>
+  <ul>
+    <li><b>Recommendation:</b> Encourage publication in reputable Open Access journals or utilize institutional funds for Article Processing Charges (APCs) where appropriate. Develop a strong institutional repository and promote faculty's use of academic social networks to share their work.</li>
+  </ul>
+
+  <h3>4. Leverage SNHU's Unique Online Learning Context</h3>
+  <p>SNHU's global leadership in online education is a powerful, yet potentially under-researched, asset. Topics like "Online and Blended Learning" (17 papers) and "Online Learning and Analytics" (7 papers) are directly relevant to millions of students and educators worldwide.</p>
+  <ul>
+    <li><b>Recommendation:</b> Establish SNHU as a thought leader in the science of online learning. Prioritize research into effective online pedagogy, student engagement in virtual environments, adaptive learning technologies, and the social impact of digital education. This niche is highly relevant and offers a distinctive institutional research identity.</li>
+  </ul>
+
+  <h2>Act V: Five-Point Playbook – Actionable Priorities for SNHU</h2>
+  <p>To maximize SNHU's research potential and elevate its scholarly standing, the following five actionable priorities are recommended:</p>
+
+  <h3>1. Amplify "Online & Applied Learning" Research</h3>
+  <ul>
+    <li><b>Action:</b> Designate "Online and Applied Learning" as a signature research theme. Establish a dedicated research institute or center focusing on online pedagogy, educational technology, student success in digital environments, and equitable access to higher education.</li>
+    <li><b>Rationale:</b> This capitalizes on SNHU's unique institutional strength and expertise, ensuring research directly informs its mission and resonates with a global audience, as seen in the "Online and Blended Learning" (17 papers) and "Online Learning and Analytics" (7 papers) topics.</li>
+  </ul>
+
+  <h3>2. Invest in the "Cognitive Tech Frontier"</h3>
+  <ul>
+    <li><b>Action:</b> Strategically invest in faculty, infrastructure, and interdisciplinary initiatives at the intersection of Computer Science, Neuroscience, Psychology (Cognitive), and Engineering. Actively support the projected growth in Neuroscience (33 papers in 2026) and Computer Science (21 papers in 2025).</li>
+    <li><b>Rationale:</b> This area shows the most explosive projected growth, along with high-impact topics like "Embodied and Extended Cognition" (25 papers) and "AI-based Problem Solving" (8 papers), positioning SNHU at the forefront of human-computer interaction and artificial intelligence applications.</li>
+  </ul>
+
+  <h3>3. Bolster "Social & Business Impact" Initiatives</h3>
+  <ul>
+    <li><b>Action:</b> Maintain and enhance support for Social Sciences and Business, Management and Accounting, particularly in areas with demonstrated high citation impact (e.g., "Quality of Life," "Green Marketing," "M-payment service"). Encourage applied research that addresses societal challenges and business innovation.</li>
+    <li><b>Rationale:</b> These fields consistently produce SNHU’s most highly-cited papers, demonstrating a strong capacity for real-world relevance and academic influence. Focusing on actionable research in "Sustainable Supply Chain Management" (6 papers) and "International Business and FDI" (9 papers) will further strengthen this.</li>
+  </ul>
+
+  <h3>4. Foster Cross-Disciplinary "Convergence Zones"</h3>
+  <ul>
+    <li><b>Action:</b> Implement programs (e.g., seed grants, inter-departmental workshops, joint faculty appointments) specifically designed to encourage collaborations between identified convergence zones: Education & Technology, Cognitive Science & AI/HCI, Sustainable Business & Data Science, and Health, Psychology & Technology.</li>
+    <li><b>Rationale:</b> Interdisciplinary research broadens impact, attracts diverse funding opportunities, and fosters novel solutions, leveraging the unique strengths across SNHU’s 1444 unique authors and diverse fields.</li>
+  </ul>
+
+  <h3>5. Cultivate a "High-Impact Publication" Culture</h3>
+  <ul>
+    <li><b>Action:</b> Develop faculty training and mentoring programs focused on research methodology, grant writing, and strategic publication planning. Provide incentives for publishing in top-tier journals and for making research Open Access.</li>
+    <li><b>Rationale:</b> With an average of 5.35 citations per paper, there's significant opportunity to enhance the visibility and influence of SNHU's scholarly work. Emphasizing quality over mere quantity will elevate SNHU's academic reputation.</li>
+  </ul>
+
+</div>
+  <div class="footer">Generated with embedumap &amp; Gemini</div>
+</div>
+</body>
+</html>

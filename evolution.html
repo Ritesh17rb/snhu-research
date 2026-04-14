@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Evolution — SNHU Research</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --surface: rgba(30, 41, 59, 0.8);
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #60a5fa;
+    --accent2: #a78bfa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+  }
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+  p {
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  strong { color: #f1f5f9; }
+  em { color: var(--muted); }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid rgba(96, 165, 250, 0.15);
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  .stat-card .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-card .label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  th, td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.1);
+  }
+  th {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  td { color: var(--text); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(96, 165, 250, 0.1);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-link">&larr; Back to SNHU Research</a>
+  <h1>Field Evolution</h1>
+  <p class="subtitle">How SNHU's research landscape has shifted over time — a data-driven narrative</p>
+  <div class="field-evolution-analysis">
+  <h1>Field Evolution Analysis: Southern New Hampshire University Research Output</h1>
+
+  <p>Southern New Hampshire University (SNHU) has demonstrated a remarkable journey in its research endeavors, evolving from a nascent scholarly presence in the early 2000s to a dynamic, multi-faceted research institution poised for significant impact. This analysis, based on SNHU's comprehensive research corpus from OpenAlex, reveals a compelling narrative of strategic growth, disciplinary diversification, and emerging leadership in critical fields.</p>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="number">832</div><div class="label">Total Papers Published</div></div>
+    <div class="stat-card"><div class="number">2001-2026</div><div class="label">Research Period (incl. projections)</div></div>
+    <div class="stat-card"><div class="number">4451</div><div class="label">Total Citations Received</div></div>
+    <div class="stat-card"><div class="number">1444</div><div class="label">Unique Authors Involved</div></div>
+    <div class="stat-card"><div class="number">5.35</div><div class="label">Average Citations per Paper</div></div>
+    <div class="stat-card"><div class="number">32</div><div class="label">Average Papers per Year</div></div>
+  </div>
+
+  <p>These key metrics highlight an institution with a rapidly expanding research footprint, attracting a broad base of scholars and generating significant intellectual currency through its publications.</p>
+
+  <h2>Act 1: The Genesis of SNHU Research (2001-2010) – Laying the Foundations</h2>
+
+  <h3>Humble Beginnings and Foundational Pillars</h3>
+  <p>The dawn of the 21st century saw SNHU's research output at a modest scale, characterized by exploratory ventures into a handful of disciplines. In 2001, the institution recorded just 2 papers (one in Business, Management and Accounting, one in Engineering). This period, stretching through the early to mid-2000s, was one of foundational growth, slowly building momentum and identifying initial areas of focus.</p>
+
+  <p>The early years were characterized by low output, with annual paper counts rarely exceeding 10. However, even in this nascent stage, a multidisciplinary approach was evident:</p>
+  <ul>
+    <li><strong>2002:</strong> Social Sciences made its first appearance with 1 paper.</li>
+    <li><strong>2003:</strong> The portfolio expanded to include Psychology and Economics, Econometrics and Finance, alongside Social Sciences, with 7 papers published.</li>
+    <li><strong>2005:</strong> Research diversified further into Business, Management and Accounting (3 papers), Computer Science (2 papers), Economics, Medicine, and Social Sciences. This year marked a small but significant leap with 8 papers.</li>
+  </ul>
+
+  <p>By the latter half of the decade, SNHU's research began to accelerate, indicating a concerted effort to foster scholarly activity. The annual paper count nearly quadrupled from 2005 to 2006 (from 8 to 18 papers). This growth was largely driven by an increasing focus on:</p>
+  <ul>
+    <li><strong>Computer Science:</strong> Emerging as a key player with 7 papers in 2006, 6 in 2008, and 6 in 2009.</li>
+    <li><strong>Business, Management and Accounting:</strong> Consistently strong, contributing 5 papers in 2006, 6 in 2008, and 3 in 2010.</li>
+    <li><strong>Social Sciences:</strong> Maintaining a steady presence, notably with 6 papers in 2008 and 6 in 2010.</li>
+    <li><strong>Economics, Econometrics and Finance:</strong> Sustaining its involvement throughout the period.</li>
+    <li><strong>Psychology:</strong> Showed a notable increase in 2009 with 5 papers.</li>
+  </ul>
+  <p>By 2010, SNHU's research output reached 15 papers, showcasing a more established, albeit still compact, research profile with core strengths beginning to solidify in areas directly relevant to its educational offerings.</p>
+
+  <h2>Act 2: Strategic Expansion and Diversification (2011-2019) – Broadening Horizons</h2>
+
+  <h3>Accelerated Growth and Established Domains</h3>
+  <p>The second decade of SNHU's research journey witnessed a significant acceleration in output and a more pronounced diversification of scholarly interests. The annual publication count surged, frequently exceeding 20 papers and peaking at 42 in 2015, demonstrating an increasingly robust research infrastructure.</p>
+
+  <p>During this period, several fields not only matured but also firmly established themselves as pillars of SNHU's research identity:</p>
+  <ul>
+    <li><strong>Social Sciences:</strong> Became the undisputed leader, showing consistent and substantial growth. Contributions soared from 7 papers in 2011 to 11 in 2015, and a remarkable 14 papers in 2018, solidifying its position as the most prolific field. This strength is further underscored by top subfields like Sociology and Political Science (63 papers) and Education (59 papers), highlighting a deep engagement with societal and pedagogical issues.</li>
+    <li><strong>Business, Management and Accounting:</strong> Maintained its foundational strength, with strong contributions year-on-year, including 9 papers in 2015 and 8 in 2014. Subfields like Strategy and Management (28 papers) and Organizational Behavior and Human Resource Management (14 papers) became prominent.</li>
+    <li><strong>Computer Science:</strong> Experienced strong bursts of activity, particularly in 2011 (13 papers) and 2015 (5 papers), and continued to contribute consistently throughout the decade. This period saw the rise of subfields like Artificial Intelligence (43 papers) and Information Systems (36 papers), laying groundwork for future growth.</li>
+    <li><strong>Psychology:</strong> Demonstrated steady and meaningful growth, contributing 5 papers in 2015 and 2018, and 6 papers in 2019. This was supported by strong subfields such as Social Psychology (30 papers) and Clinical Psychology (23 papers).</li>
+  </ul>
+
+  <p>Beyond these core areas, SNHU's research portfolio expanded to include a wider array of fields, reflecting a broadening intellectual curiosity and strategic investments:</p>
+  <ul>
+    <li><strong>Arts and Humanities:</strong> Showed increasing presence, with 3 papers in 2011 and 5 in 2018.</li>
+    <li><strong>Medicine & Health Professions:</strong> Began to emerge with greater frequency, signifying a growing interest in health-related research. For instance, Medicine contributed 3 papers in 2014 and 2017, and Health Professions appeared with 1 paper in 2012, 2 in 2018, and 3 in 2019.</li>
+    <li><strong>Neuroscience:</strong> While smaller in scale, maintained a notable presence, particularly with 2 papers in 2016 and 2017, hinting at future potential. Cognitive Neuroscience (55 papers overall) stands out as a significant subfield.</li>
+    <li><strong>Decision Sciences:</strong> Made a distinct appearance with 3 papers in 2016 and 2 in 2018, often overlapping with Business and Computer Science in areas like risk management and optimization.</li>
+  </ul>
+  <p>This period cemented SNHU's reputation as a university with diverse scholarly interests, effectively balancing established strengths with strategic expansions into emerging fields, all while experiencing a substantial increase in overall research output.</p>
+
+  <h2>Act 3: Charting the Future: Modern Research Frontiers (2020-2026) – Unprecedented Growth and Bold Directions</h2>
+
+  <h3>Unprecedented Growth and Bold New Directions</h3>
+  <p>The most recent and projected years mark an explosive period of growth and a dramatic reorientation of SNHU's research focus. The sheer volume of papers escalated sharply, far surpassing previous benchmarks. In 2020, publications soared to 63, and while there were minor fluctuations, the trend points unequivocally upwards, with 55 papers in both 2023 and 2024. The projections for 2025 (115 papers) and 2026 (104 papers) signal an institutional commitment to becoming a major research player.</p>
+
+  <p>While <strong>Social Sciences</strong> remains a dominant force, consistently contributing the highest numbers (e.g., 15 in 2021 and 2022, 22 in 2023, 21 in 2024, and projected 23 in 2025), the narrative of this period is defined by the significant emergence and surge of STEM fields:</p>
+  <ul>
+    <li><strong>Engineering:</strong> Experienced a massive spike in 2020 with 15 papers, followed by a projected resurgence in 2025 with 13 papers, indicating a strategic, albeit non-linear, investment in this area. Aerospace Engineering (17 papers overall) is a notable subfield.</li>
+    <li><strong>Computer Science:</strong> Shows robust and sustained growth, contributing 5 papers in 2020 and 2024, 3 in 2022, and with an astonishing projected leap to 21 papers in 2025 and 18 in 2026. This reinforces its critical role, with Artificial Intelligence (43 papers overall) and Information Systems (36 papers) being central to this expansion.</li>
+    <li><strong>Medicine and Health Professions:</strong> Demonstrate continued strength and growth, with Medicine contributing 5 papers in 2020 and 2022, 7 in 2024, and projected 8 in 2025. Health Professions also maintains a consistent presence.</li>
+    <li><strong>Psychology and Arts and Humanities:</strong> Remain significant contributors, ensuring a well-rounded research portfolio that balances STEM with the social and humanistic disciplines.</li>
+  </ul>
+
+  <h3>A Future Shaped by Neuroscience and STEM</h3>
+  <p>The most striking shift, however, is projected for 2026. This year is poised to redefine SNHU's research landscape:</p>
+  <table border="1" style="width:100%; border-collapse: collapse;">
+    <caption>Comparison of Top Research Fields: Mid-2010s vs. Projected Mid-2020s</caption>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Papers in 2015</th>
+        <th>Projected Papers in 2025</th>
+        <th>Projected Papers in 2026</th>
+        <th>Key Shift</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Social Sciences</td>
+        <td>11</td>
+        <td>23</td>
+        <td>7</td>
+        <td>Sustained leader, but relative prominence shifts in 2026.</td>
+      </tr>
+      <tr>
+        <td>Business, Management and Accounting</td>
+        <td>9</td>
+        <td>9</td>
+        <td>-</td>
+        <td>Consistent, but less dominant compared to surging STEM fields.</td>
+      </tr>
+      <tr>
+        <td>Computer Science</td>
+        <td>5</td>
+        <td>21</td>
+        <td>18</td>
+        <td>Massive growth, becoming a top-tier field.</td>
+      </tr>
+      <tr>
+        <td>Psychology</td>
+        <td>5</td>
+        <td>-</td>
+        <td>8</td>
+        <td>Consistent contributor, foundational.</td>
+      </tr>
+      <tr>
+        <td>Economics, Econometrics and Finance</td>
+        <td>5</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Diminished relative to other growing areas.</td>
+      </tr>
+      <tr>
+        <td>Engineering</td>
+        <td>-</td>
+        <td>13</td>
+        <td>-</td>
+        <td>Significant resurgence and projected strength.</td>
+      </tr>
+      <tr>
+        <td>Medicine</td>
+        <td>-</td>
+        <td>8</td>
+        <td>-</td>
+        <td>Growing importance in health research.</td>
+      </tr>
+      <tr>
+        <td>Neuroscience</td>
+        <td>-</td>
+        <td>-</td>
+        <td>33</td>
+        <td><strong>Explosive emergence as a leading field.</strong></td>
+      </tr>
+      <tr>
+        <td>Physics and Astronomy</td>
+        <td>-</td>
+        <td>-</td>
+        <td>11</td>
+        <td><strong>New significant player in STEM.</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The projected 33 papers in <strong>Neuroscience</strong> in 2026 is an astounding figure, making it the single largest field contribution in any given year across SNHU's history. This indicates a monumental institutional investment and a potentially new research frontier for the university, likely spearheaded by the existing strength in Cognitive Neuroscience (55 papers overall).</p>
+  <p>Simultaneously, <strong>Physics and Astronomy</strong> is projected to emerge with 11 papers in 2026, marking another significant expansion into core sciences. These projections suggest a strategic pivot towards high-impact STEM research, while also strengthening its existing Computer Science and Engineering capabilities, alongside its traditional strengths in Social Sciences and Psychology.</p>
+
+  <h2>Act 4: Echoes of Impact: SNHU's Most Cited Contributions</h2>
+
+  <h3>Driving Scholarship and Shaping Conversations</h3>
+  <p>While the volume and distribution of research fields tell a story of growth and diversification, the impact of individual papers illuminates SNHU's contributions to global scholarship. The most-cited papers reveal areas where SNHU researchers have significantly influenced their respective fields, often reflecting the institution's core strengths. These papers act as beacons, attracting attention and shaping future research directions.</p>
+
+  <p>The top 20 most-cited papers highlight a blend of SNHU's enduring disciplinary strengths and its knack for addressing contemporary issues:</p>
+  <ul class="cited-papers-list">
+    <li><strong>[251 cites] Quality of Life, Event Impacts, and Mega-Event Support among South African Residents before and afte (2013, Social Sciences):</strong> This paper stands as SNHU's most cited work, demonstrating a profound impact in social sciences research, particularly on community studies and event sociology. Its deep dive into socio-economic impacts positions SNHU at the forefront of applied social research.</li>
+    <li><strong>[216 cites] M‐payment service: Interplay of perceived risk, benefit, and trust in service adoption (2018, Decision Sciences):</strong> This highly influential paper showcases SNHU's strength in Decision Sciences, particularly at the intersection of technology adoption and consumer behavior. Its relevance to digital economies underscores SNHU's engagement with cutting-edge business challenges.</li>
+    <li><strong>[115 cites] How Green Marketing Can Create a Sustainable Competitive Advantage for a Business (2013, Business, Management and Accounting):</strong> Reflecting a growing global concern for sustainability, this paper highlights SNHU's contributions to business ethics and strategic management, linking environmental responsibility with corporate success.</li>
+    <li><strong>[103 cites] The Review of Content Marketing as a New Trend in Marketing Practices (2015, Social Sciences):</strong> This work exemplifies SNHU's strong contributions to understanding evolving media and marketing landscapes, grounding contemporary trends in solid social science inquiry.</li>
+    <li><strong>[91 cites] Integrating quality function deployment and benchmarking to achieve greater profitability (2006, Business, Management and Accounting):</strong> An early, high-impact paper showcasing SNHU's foundational strengths in business and management, focusing on practical methodologies for organizational improvement.</li>
+    <li><strong>[88 cites] Strategic Planning Models for Reverse and Closed-Loop Supply Chains (2008, Business, Management and Accounting):</strong> Another significant contribution from the Business field, illustrating SNHU's engagement with complex operational challenges and sustainable business practices.</li>
+    <li><strong>[83 cites] Pro‐environmental Behavior in the Workplace: A Review of Empirical Studies and Directions for Future (2015, Environmental Science):</strong> This paper, while in Environmental Science, aligns well with SNHU's business and social science strengths, highlighting interdisciplinary research on sustainability.</li>
+    <li><strong>[66 cites] Artificial immune systems for the detection of credit card fraud: an architecture, prototype and pre (2011, Engineering):</strong> An important early high-impact paper that signaled SNHU's growing prowess in engineering and its application to real-world security challenges, foreshadowing the later surge in STEM fields.</li>
+    <li><strong>[66 cites] Putting Ordinary Language to Work (2003, Psychology):</strong> A foundational paper in Psychology, demonstrating early and sustained excellence in the field, exploring fundamental aspects of human cognition and communication.</li>
+    <li><strong>[64 cites] A Systematic Literature Review of the Application of Information Communication Technology for Visual (2016, Neuroscience):</strong> This citation highlights SNHU's impactful work in Neuroscience, particularly its interdisciplinary engagement with technology for sensory applications, preceding the dramatic projected growth in the field.</li>
+    <li><strong>[64 cites] Why misinformation is more likely to be recognised over time: A source monitoring account (2002, Social Sciences):</strong> A timely and highly relevant early contribution from Social Sciences, demonstrating SNHU's early engagement with critical issues like the spread of misinformation, a topic of immense contemporary importance.</li>
+    <li><strong>[60 cites] The role of HBCUs in the college choice process of African Americans in California (2005, Social Sciences):</strong> This paper reflects SNHU's commitment to social equity and understanding educational pathways, a core tenet of its overall mission.</li>
+  </ul>
+  <p>The remaining papers in the top 20 further underscore diverse areas of excellence, including studies on confirmation bias in Psychology, microfinance in Economics, language learning in Arts and Humanities, and even the philosophical implications of AI and robotics in Computer Science and Medicine. Papers like "Could robots become authentic companions in nursing care?" (2015, Computer Science) show an early forward-looking stance into human-computer interaction and its ethical dimensions, linking to both emerging AI topics and future Neuroscience growth.</p>
+
+  <p>These highly cited works illustrate SNHU's capacity not just to conduct research, but to produce scholarship that resonates widely, contributes significantly to academic discourse, and often addresses pressing societal challenges. They validate the institution's historical strengths and offer insights into the foundational contributions that may have spurred interest and investment in the surging fields of today and tomorrow.</p>
+
+  <h2>Conclusion: A Dynamic Research Trajectory</h2>
+
+  <p>Southern New Hampshire University's research journey, as illuminated by the OpenAlex data, is a compelling narrative of dynamic evolution. From a modest beginning in the early 2000s, SNHU has systematically expanded its research enterprise, transforming into an institution with a broad and impactful scholarly footprint. The trajectory is marked by several distinct phases: an initial period of foundational establishment, followed by a decade of strategic diversification and accelerated growth, and culminating in an explosive expansion into new, high-impact frontiers.</p>
+
+  <p>The consistent strength of Social Sciences, Business, Management and Accounting, and Psychology forms the bedrock of SNHU's research identity. These fields have not only generated a significant volume of papers but also produced highly cited works that have shaped academic conversations. However, the data strongly points towards a strategic pivot and aggressive investment in STEM disciplines. The projected surge in Computer Science, the dramatic emergence of Neuroscience as a leading field in 2026, and the growing presence of Engineering and Physics and Astronomy signal a bold new direction for SNHU, positioning it as an increasingly formidable player in science and technology research.</p>
+
+  <p>The story of SNHU's research evolution is one of adaptation, ambition, and strategic foresight. By balancing its established strengths with a keen eye on emerging scientific and technological landscapes, SNHU is not merely growing its research output; it is actively shaping its future, fostering interdisciplinary collaboration, and committing to scholarship that addresses both enduring societal questions and the cutting-edge challenges of the 21st century.</p>
+</div>
+  <div class="footer">Generated with embedumap &amp; Gemini</div>
+</div>
+</body>
+</html>
