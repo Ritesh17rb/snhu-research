@@ -410,7 +410,9 @@
 
   .sticky-card ul,
   .gap-card ul,
-  .reading-card ul {
+  .reading-card ul,
+  .trajectory-proof ul,
+  .insight-card ul {
     margin: 14px 0 0;
     padding-left: 18px;
     color: var(--muted);
@@ -418,8 +420,180 @@
 
   .sticky-card li,
   .gap-card li,
-  .reading-card li {
+  .reading-card li,
+  .trajectory-proof li,
+  .insight-card li {
     margin-bottom: 8px;
+  }
+
+  .era-grid,
+  .insight-grid,
+  .paper-grid,
+  .balance-grid,
+  .motion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .era-card,
+  .insight-card,
+  .paper-card,
+  .balance-card,
+  .motion-card {
+    border-radius: 22px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    background: rgba(255,255,255,0.03);
+    padding: 18px;
+  }
+
+  .era-card h3,
+  .insight-card h3,
+  .paper-card h3,
+  .balance-card h3,
+  .motion-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .era-card p,
+  .insight-card p,
+  .paper-card p,
+  .balance-card p,
+  .motion-card p {
+    margin: 8px 0 0;
+    color: var(--muted);
+  }
+
+  .era-card .value {
+    margin-top: 10px;
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+
+  .phase-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .phase-meta span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.08);
+    color: #d8e6f5;
+    font-size: 0.78rem;
+  }
+
+  .trajectory-proof {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+  }
+
+  .trajectory-proof strong {
+    color: #d8ebff;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .paper-meta {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .paper-meta span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.08);
+    color: #d8e6f5;
+    font-size: 0.78rem;
+  }
+
+  .balance-card ul,
+  .paper-card ul {
+    margin: 14px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+  }
+
+  .balance-card li,
+  .paper-card li {
+    margin-bottom: 8px;
+  }
+
+  .motion-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .stack-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+  .stack-row strong {
+    color: #d8ebff;
+    font-size: 0.84rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .stack-bar {
+    display: flex;
+    height: 16px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: rgba(148, 163, 184, 0.08);
+  }
+
+  .stack-bar span {
+    height: 100%;
+  }
+
+  .stack-bar .s1 { background: linear-gradient(90deg, #38d39f, #12b981); }
+  .stack-bar .s2 { background: linear-gradient(90deg, #5fb3ff, #2f7fe6); }
+  .stack-bar .s3 { background: linear-gradient(90deg, #f8c453, #f59e0b); }
+
+  .drift-map {
+    margin-top: 16px;
+    border-radius: 20px;
+    padding: 14px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+  }
+
+  .drift-map svg {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+
+  .drift-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .drift-legend span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.08);
+    color: #d8e6f5;
+    font-size: 0.78rem;
   }
 
   .footer {
@@ -440,6 +614,11 @@
     .sticky-grid,
     .gap-grid,
     .reading-grid,
+    .era-grid,
+    .insight-grid,
+    .paper-grid,
+    .balance-grid,
+    .motion-grid,
     .section-head,
     .topbar {
       grid-template-columns: 1fr;
@@ -475,10 +654,9 @@
           <div class="eyebrow">Field Evolution · SNHU Research</div>
           <h1>How SNHU's research map has shifted.</h1>
           <p class="lead">
-            This page is not just a chronology. It is a reading of how SNHU's semantic center of
-            gravity has changed inside the embedding map. The dominant movement is clear: away from
-            broadly applied, mixed institutional output and toward a tighter constellation of AI-heavy,
-            cognition-heavy, and digitally mediated research.
+            This page tracks how SNHU's research center of gravity has changed over time inside the
+            embedding map. The dominant movement is clear: away from a broad applied baseline and
+            toward a tighter constellation of AI-heavy, cognition-heavy, and digitally mediated work.
           </p>
         </div>
         <div class="hero-aside">
@@ -489,7 +667,7 @@
           </div>
           <div class="aside-card">
             <div class="section-tag">Why this matters</div>
-            <span>This page serves the meeting goal by showing not only where SNHU has published, but how its identity has moved in the wider universe over time.</span>
+            <span>This page shows not only where SNHU has published, but how its research identity has shifted relative to the wider benchmark landscape over time.</span>
           </div>
         </div>
       </div>
@@ -536,9 +714,169 @@
     <section class="section">
       <div class="section-head">
         <div>
+          <div class="section-tag">Era View</div>
+          <h2>The easiest way to read the change is in three blocks.</h2>
+          <p>The portfolio is easiest to understand when grouped into three phases: an early mixed baseline, a digital consolidation phase, and a recent AI- and cognition-tilted frontier.</p>
+        </div>
+      </div>
+
+      <div class="era-grid">
+        <article class="era-card">
+          <h3>2001–2010 · Small mixed baseline</h3>
+          <div class="value">101</div>
+          <p>papers across the first decade, with business, social science, and early computing dominating the center of gravity.</p>
+          <ul>
+            <li>Early portfolio is broad but not yet sharply differentiated.</li>
+            <li>Computer science appears, but mostly through web, multi-agent, and security work.</li>
+            <li>The institutional story is present, but not yet distinctive.</li>
+          </ul>
+        </article>
+
+        <article class="era-card">
+          <h3>2011–2018 · Identity and digital turn</h3>
+          <div class="value">222</div>
+          <p>papers as online learning, digital services, psychology, and business innovation become more visible in the map.</p>
+          <ul>
+            <li>Online and blended learning becomes an identifiable institutional anchor.</li>
+            <li>Business and psychology start moving upward into more digitally mediated themes.</li>
+            <li>This is where the future platform starts becoming legible.</li>
+          </ul>
+        </article>
+
+        <article class="era-card">
+          <h3>2019–2026 · AI and cognition frontier</h3>
+          <div class="value">509</div>
+          <p>papers across the latest period, with a dramatic rise in neuroscience, AI-adjacent computing, and digitally mediated research.</p>
+          <ul>
+            <li>Neuroscience becomes one of the clearest new growth signatures.</li>
+            <li>Computer science shifts toward XAI, privacy, tutoring, and AI planning.</li>
+            <li>The map now points toward a sharper research identity rather than simply higher output.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Trajectory Dashboard</div>
+          <h2>The shift is visible in both volume and direction.</h2>
+          <p>These summary signals show why the recent portfolio feels different from the earlier one: it is larger, more concentrated, and more technically legible.</p>
+        </div>
+      </div>
+
+      <div class="balance-grid">
+        <article class="balance-card">
+          <h3>Portfolio volume by phase</h3>
+          <div class="bar-board">
+            <div class="bar-row"><label>2001-2010</label><div class="track"><div class="fill" style="width: 20%"></div></div><strong>101</strong></div>
+            <div class="bar-row"><label>2011-2018</label><div class="track"><div class="fill green" style="width: 44%"></div></div><strong>222</strong></div>
+            <div class="bar-row"><label>2019-2026</label><div class="track"><div class="fill amber" style="width: 100%"></div></div><strong>509</strong></div>
+          </div>
+        </article>
+
+        <article class="balance-card">
+          <h3>Recent frontier signals</h3>
+          <div class="bar-board">
+            <div class="bar-row"><label>Neuroscience</label><div class="track"><div class="fill" style="width: 96%"></div></div><strong>44</strong></div>
+            <div class="bar-row"><label>Computer Science</label><div class="track"><div class="fill green" style="width: 100%"></div></div><strong>46</strong></div>
+            <div class="bar-row"><label>Online-learning anchor</label><div class="track"><div class="fill amber" style="width: 100%"></div></div><strong>236</strong></div>
+          </div>
+        </article>
+
+        <article class="balance-card">
+          <h3>How to interpret recent citations</h3>
+          <p>Recent work will always look weaker on citations than older work. For the latest phase, movement and concentration are more informative than citation totals alone.</p>
+          <ul>
+            <li>Average citations are much higher in older eras because those papers had longer to accumulate attention.</li>
+            <li>The better late-stage signal is how strongly AI, cognition, and digital learning topics now cluster together.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Momentum View</div>
+          <h2>How the portfolio composition changes across eras.</h2>
+          <p>These visuals make the evolution easier to scan in a presentation setting: what dominated each phase, and how the research center moved from a mixed baseline toward a more concentrated frontier.</p>
+        </div>
+      </div>
+
+      <div class="motion-grid">
+        <article class="motion-card">
+          <h3>Top-field mix by era</h3>
+          <p>Each bar shows the relative weight of the three most visible field groups in that phase.</p>
+          <div class="stack-row">
+            <strong>2001-2010</strong>
+            <div class="stack-bar">
+              <span class="s1" style="width: 38%"></span>
+              <span class="s2" style="width: 34%"></span>
+              <span class="s3" style="width: 28%"></span>
+            </div>
+          </div>
+          <div class="stack-row">
+            <strong>2011-2018</strong>
+            <div class="stack-bar">
+              <span class="s1" style="width: 43%"></span>
+              <span class="s2" style="width: 30%"></span>
+              <span class="s3" style="width: 27%"></span>
+            </div>
+          </div>
+          <div class="stack-row">
+            <strong>2019-2026</strong>
+            <div class="stack-bar">
+              <span class="s1" style="width: 30%"></span>
+              <span class="s2" style="width: 35%"></span>
+              <span class="s3" style="width: 35%"></span>
+            </div>
+          </div>
+          <div class="drift-legend">
+            <span>Green: social and institutional fields</span>
+            <span>Blue: computing and AI fields</span>
+            <span>Amber: cognition and psychology fields</span>
+          </div>
+        </article>
+
+        <article class="motion-card">
+          <h3>Center-of-gravity drift</h3>
+          <p>The overall portfolio is moving into a tighter high-technical, high-cognition neighborhood rather than expanding evenly in all directions.</p>
+          <div class="drift-map">
+            <svg viewBox="0 0 380 200" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="driftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#38d39f"/>
+                  <stop offset="50%" stop-color="#5fb3ff"/>
+                  <stop offset="100%" stop-color="#f8c453"/>
+                </linearGradient>
+              </defs>
+              <path d="M36 146 C92 136, 110 124, 150 104 S238 76, 274 58 S330 42, 346 36" fill="none" stroke="url(#driftLine)" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="36" cy="146" r="8" fill="#38d39f"/>
+              <circle cx="150" cy="104" r="8" fill="#5fb3ff"/>
+              <circle cx="274" cy="58" r="8" fill="#27d7d0"/>
+              <circle cx="346" cy="36" r="8" fill="#f8c453"/>
+              <text x="24" y="170" fill="#d8e6f5" font-size="12">2001-2010</text>
+              <text x="126" y="128" fill="#d8e6f5" font-size="12">2011-2018</text>
+              <text x="246" y="82" fill="#d8e6f5" font-size="12">2019-2022</text>
+              <text x="286" y="24" fill="#d8e6f5" font-size="12">2023-2026</text>
+            </svg>
+          </div>
+          <div class="drift-legend">
+            <span>Less concentrated</span>
+            <span>More digital</span>
+            <span>More AI + cognition</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
           <div class="section-tag">Act I · Who moved farthest</div>
           <h2>The biggest movers are not evenly distributed.</h2>
-          <p>Neuroscience is the standout, but several other fields have clearly migrated as well. That matters because it means the institution's overall shape is changing, not just its volume.</p>
+          <p>Neuroscience is the standout, but several other fields have clearly migrated as well. That matters because the institution's overall shape is changing, not only its volume.</p>
         </div>
       </div>
 
@@ -563,27 +901,27 @@
           <div class="timeline">
             <div class="phase">
               <div class="phase-year">2001–2005</div>
-              <div><h4>Applied baseline</h4><p>Business, language, and social-science work define the early center of gravity.</p></div>
+              <div><h4>Applied baseline</h4><p>Business, language, and social-science work define the early center of gravity.</p><div class="phase-meta"><span>22 papers</span><span>Social sciences lead</span><span>Business emerges early</span></div></div>
             </div>
             <div class="phase">
               <div class="phase-year">2006–2010</div>
-              <div><h4>Portfolio expansion</h4><p>Engineering, medicine, and educational research broaden the institutional map.</p></div>
+              <div><h4>Portfolio expansion</h4><p>Engineering, medicine, and educational research broaden the institutional map.</p><div class="phase-meta"><span>79 papers</span><span>Computer science accelerates</span><span>Security + multi-agent work</span></div></div>
             </div>
             <div class="phase">
               <div class="phase-year">2011–2014</div>
-              <div><h4>Institutional identity</h4><p>Online-learning strength becomes more visible as a recurring institutional theme.</p></div>
+              <div><h4>Institutional identity</h4><p>Online-learning strength becomes more visible as a recurring institutional theme.</p><div class="phase-meta"><span>96 papers</span><span>Online learning becomes legible</span><span>Business + web services stay strong</span></div></div>
             </div>
             <div class="phase">
               <div class="phase-year">2015–2018</div>
-              <div><h4>Digital turn</h4><p>Trust, digital services, AI, and cognition begin pulling multiple fields upward.</p></div>
+              <div><h4>Digital turn</h4><p>Trust, digital services, AI, and cognition begin pulling multiple fields upward.</p><div class="phase-meta"><span>126 papers</span><span>Psychology grows</span><span>Education and digital systems converge</span></div></div>
             </div>
             <div class="phase">
               <div class="phase-year">2019–2022</div>
-              <div><h4>Convergence</h4><p>Education, policy, and machine-centered work increasingly intersect in the same semantic neighborhoods.</p></div>
+              <div><h4>Convergence</h4><p>Education, policy, and machine-centered work increasingly intersect in the same semantic neighborhoods.</p><div class="phase-meta"><span>180 papers</span><span>Assessment and feedback rise</span><span>Psychology + engineering gain weight</span></div></div>
             </div>
             <div class="phase">
               <div class="phase-year">2023–2026</div>
-              <div><h4>Current frontier</h4><p>Theoretical consciousness and AI-heavy themes dominate the visible edge of the latest SNHU map.</p></div>
+              <div><h4>Current frontier</h4><p>Theoretical consciousness and AI-heavy themes dominate the visible edge of the latest SNHU map.</p><div class="phase-meta"><span>329 papers</span><span>Embodied cognition surges</span><span>AI and business intelligence expand</span></div></div>
             </div>
           </div>
         </article>
@@ -621,6 +959,14 @@
             <span class="tag">+1300% recent growth</span>
             <span class="tag">88% theoretical consciousness</span>
           </div>
+          <div class="trajectory-proof">
+            <strong>What changed inside the field</strong>
+            <ul>
+              <li>Early neuroscience presence is tiny; the late-period footprint is large enough to reshape the whole map.</li>
+              <li>Recent work is dominated by <em>Embodied and Extended Cognition</em>.</li>
+              <li>The field now behaves like a frontier identity marker, not a peripheral topic cluster.</li>
+            </ul>
+          </div>
         </article>
 
         <article class="trajectory-card">
@@ -643,6 +989,14 @@
           <div class="tag-row">
             <span class="tag">+450% recent growth</span>
             <span class="tag">209 papers in AI/cyber/automation</span>
+          </div>
+          <div class="trajectory-proof">
+            <strong>What changed inside the field</strong>
+            <ul>
+              <li>Earlier work leans toward web services, multi-agent systems, and security infrastructure.</li>
+              <li>Recent work adds XAI, privacy-preserving systems, adaptive learning, and AI planning.</li>
+              <li>The field becomes more reusable institutionally because it can support multiple adjacent stories.</li>
+            </ul>
           </div>
         </article>
 
@@ -667,6 +1021,14 @@
             <span class="tag">75% theoretical consciousness</span>
             <span class="tag">strong cognition pull</span>
           </div>
+          <div class="trajectory-proof">
+            <strong>What changed inside the field</strong>
+            <ul>
+              <li>Psychology moves away from more applied and scattered topics toward a tighter cognition-oriented neighborhood.</li>
+              <li>That makes it more compatible with the neuroscience and AI turn rather than isolated from it.</li>
+              <li>The field matters less for volume than for convergence value across the new frontier.</li>
+            </ul>
+          </div>
         </article>
 
         <article class="trajectory-card">
@@ -690,6 +1052,14 @@
             <span class="tag">216-citation flagship paper</span>
             <span class="tag">AI-facing business turn</span>
           </div>
+          <div class="trajectory-proof">
+            <strong>What changed inside the field</strong>
+            <ul>
+              <li>Earlier business work centers on international business, supply chains, and organizational performance.</li>
+              <li>Recent work shifts toward big data, digital finance, AI-assisted HR, and supply-chain resilience.</li>
+              <li>This is why business functions as a translation layer between technical capability and external relevance.</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
@@ -706,7 +1076,7 @@
       <div class="sticky-grid">
         <article class="sticky-card">
           <h3>Online and Adult Education is the durable core.</h3>
-          <p>This is not just a historical association with SNHU. It is one of the strongest visible clusters and remains threaded through multiple fields rather than confined to one department.</p>
+          <p>This is one of the strongest visible clusters in the portfolio and remains threaded through multiple fields rather than confined to one department.</p>
           <ul>
             <li>236 SNHU papers in this cluster versus 68 in the broader universe.</li>
             <li>Acts as a bridge between education, psychology, social science, and digital systems.</li>
@@ -721,6 +1091,60 @@
             <li>Business shifted upward toward digital-service and innovation themes.</li>
             <li>Psychology and neuroscience shifted left toward theoretical models of mind.</li>
             <li>Computer science stayed high on machine-centered work while becoming more connected to cognition and learning.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Evidence By Era</div>
+          <h2>The evolution is easier to believe when the papers look different across eras.</h2>
+          <p>The page becomes more comprehensive when it shows not only counts and movement, but the kinds of papers that characterize each phase.</p>
+        </div>
+      </div>
+
+      <div class="paper-grid">
+        <article class="paper-card">
+          <h3>Early era: applied and institutional</h3>
+          <p><strong>The role of HBCUs in the college choice process of African Americans in California</strong> and <strong>Why misinformation is more likely to be recognised over time</strong> are typical of the earlier social-science-heavy center of gravity.</p>
+          <div class="paper-meta">
+            <span>2002-2005</span>
+            <span>60-64 cites</span>
+            <span>Institutional and social-science framing</span>
+          </div>
+          <ul>
+            <li>The portfolio is useful and applied, but not yet sharply distinctive in the map.</li>
+            <li>The main signal is breadth, not a single frontier identity.</li>
+          </ul>
+        </article>
+
+        <article class="paper-card">
+          <h3>Middle era: digital and platform building</h3>
+          <p><strong>The Online First-Year Experience</strong>, <strong>College for America</strong>, and work on digital marketing and service adoption show the map thickening around online systems and digitally mediated practice.</p>
+          <div class="paper-meta">
+            <span>2011-2022</span>
+            <span>20-103 cites</span>
+            <span>Online learning + digital adoption</span>
+          </div>
+          <ul>
+            <li>This is where SNHU's institutional identity becomes more legible.</li>
+            <li>The portfolio starts to gather around platforms rather than isolated applications.</li>
+          </ul>
+        </article>
+
+        <article class="paper-card">
+          <h3>Latest era: AI, cognition, and frontier language</h3>
+          <p>Recent titles on <strong>Embodied and Extended Cognition</strong>, <strong>privacy-preserving federated learning</strong>, and <strong>AI-powered tutoring</strong> show a more technical and conceptually sharper research language.</p>
+          <div class="paper-meta">
+            <span>2023-2026</span>
+            <span>High recent volume</span>
+            <span>Low citations because recency</span>
+          </div>
+          <ul>
+            <li>The lower citation counts are mostly a time effect, not evidence of weak interest.</li>
+            <li>The important signal is how concentrated the topic mix has become around AI and cognition.</li>
           </ul>
         </article>
       </div>
@@ -758,7 +1182,7 @@
           </div>
           <ul>
             <li>Strengthens social science, education, psychology, and business at once.</li>
-            <li>Improves rigor, not just topic coverage.</li>
+            <li>Improves rigor across established strengths instead of merely adding topic coverage.</li>
           </ul>
         </article>
       </div>
@@ -767,34 +1191,115 @@
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="section-tag">Reading Notes</div>
-          <h2>How to use this page well.</h2>
-          <p>This is a directional interpretation layer on top of the live map, not a replacement for the data exploration itself.</p>
+          <div class="section-tag">Field Balance</div>
+          <h2>What got bigger, and what stayed central.</h2>
+          <p>This is the simpler portfolio reading behind the geometry. It helps explain why some areas feel like stable core, some like frontier growth, and some like support systems.</p>
         </div>
       </div>
 
-      <div class="reading-grid">
-        <article class="reading-card">
-          <h3>What the page is good for</h3>
+      <div class="balance-grid">
+        <article class="balance-card">
+          <h3>What dominates the recent map</h3>
+          <p>The late portfolio is still broad, but recent energy is concentrated enough to read clearly.</p>
           <ul>
-            <li>Identifying the clearest semantic shifts in SNHU's research identity.</li>
-            <li>Separating stable institutional anchors from newer frontier movements.</li>
-            <li>Showing where future strategy should build on real directional momentum.</li>
+            <li>Social sciences: 73 papers in 2023-2026.</li>
+            <li>Computer science: 46 papers in 2023-2026.</li>
+            <li>Neuroscience: 44 papers in 2023-2026.</li>
+            <li>The frontier is no longer spread evenly across many unrelated fields.</li>
           </ul>
         </article>
 
-        <article class="reading-card">
-          <h3>What not to over-read</h3>
+        <article class="balance-card">
+          <h3>What is growing faster than before</h3>
+          <p>Recent growth is not uniform. That unevenness is what makes the strategic reading possible.</p>
           <ul>
-            <li>The axes are inferred semantic poles, not fixed categories.</li>
-            <li>UMAP compresses a richer space into two dimensions, so some nuance is always lost.</li>
-            <li>Field averages can hide subcluster complexity, which is why the live map still matters.</li>
+            <li>Neuroscience rises from 3 papers in 2019-2022 to 44 in 2023-2026.</li>
+            <li>Computer science rises from 16 to 46 across the same comparison.</li>
+            <li>Social sciences also grow, but more as a supporting environment than the most novel frontier.</li>
+          </ul>
+        </article>
+
+        <article class="balance-card">
+          <h3>What to read carefully</h3>
+          <p>The newest work has lower average citations because it is newer, so movement and concentration matter more than citation totals in the latest era.</p>
+          <ul>
+            <li>Average citations drop from 11.62 in 2011-2014 to 0.64 in 2023-2026 mostly because the papers are recent.</li>
+            <li>That is why this page emphasizes changing topic mix and map position, not citation counts alone.</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <div class="footer">Generated with embedumap &amp; Gemini · redesigned as an executive evolution story</div>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Act V · Why the evolution matters</div>
+          <h2>What this movement implies for strategy.</h2>
+          <p>These are the strategic implications that follow from the movement patterns above.</p>
+        </div>
+      </div>
+
+      <div class="insight-grid">
+        <article class="insight-card">
+          <h3>Protect the anchor, but stop treating it as the whole story.</h3>
+          <p>Online and adult education still gives SNHU legitimacy, but the newer differentiator is the way AI, cognition, and digital systems are gathering around it.</p>
+          <ul>
+            <li>Keep the anchor visible because it explains why SNHU has a right to speak about learning innovation.</li>
+            <li>Use it as a platform for AI-supported pedagogy, feedback, and student-success research.</li>
+          </ul>
+        </article>
+
+        <article class="insight-card">
+          <h3>The map is getting more technical and more conceptually sharp.</h3>
+          <p>The institution is no longer just broad and mixed. Its visible frontier is increasingly defined by cognition-heavy and AI-heavy work.</p>
+          <ul>
+            <li>This makes deep learning, vision, privacy, and explainability better expansion targets than unrelated new fields.</li>
+            <li>It also makes cross-field collaboration more plausible, because multiple fields now sit closer together semantically.</li>
+          </ul>
+        </article>
+
+        <article class="insight-card">
+          <h3>Quality infrastructure becomes more important as the map sharpens.</h3>
+          <p>Once the institution tilts toward a few stronger bets, methods, research software, and reproducibility matter more because they help the next wave compound.</p>
+          <ul>
+            <li>The quieter methods gaps are strategic because they improve multiple fields at once.</li>
+            <li>That is how an evolution story turns into a durable research strategy.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Leadership Conclusions</div>
+          <h2>What this evolution suggests for the next phase.</h2>
+          <p>The overall message is not simply that SNHU is publishing more. It is that the institution now has a clearer opportunity to organize around a more distinctive and more coherent research posture.</p>
+        </div>
+      </div>
+
+      <div class="reading-grid">
+        <article class="reading-card">
+          <h3>Recommended reading of the portfolio</h3>
+          <ul>
+            <li>Preserve online and adult education as a strategic anchor rather than a historical label.</li>
+            <li>Build the next identity layer around AI, cognition, learning systems, and digitally mediated practice.</li>
+            <li>Use technical capabilities and methods support to make the strongest emerging themes cumulative.</li>
+          </ul>
+        </article>
+
+        <article class="reading-card">
+          <h3>What to handle with care</h3>
+          <ul>
+            <li>The axes are inferred semantic poles, not fixed categories.</li>
+            <li>UMAP compresses a richer space into two dimensions, so some nuance is always lost.</li>
+            <li>Field averages can hide subcluster complexity, which is why the live map and underlying paper lists still matter.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <div class="footer">SNHU research evolution analysis based on embedding-space movement, period comparisons, and representative portfolio evidence.</div>
   </div>
 </body>
 </html>

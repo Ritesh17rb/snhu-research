@@ -518,6 +518,261 @@
     gap: 18px;
   }
 
+  .summary-grid,
+  .decision-grid,
+  .portfolio-grid,
+  .paper-grid,
+  .roadmap-grid,
+  .visual-score-grid,
+  .flow-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .summary-card,
+  .decision-card,
+  .portfolio-card,
+  .paper-card,
+  .roadmap-card,
+  .visual-score-card,
+  .flow-card {
+    border-radius: 22px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    background: rgba(255,255,255,0.03);
+    padding: 18px;
+  }
+
+  .summary-card h3,
+  .decision-card h3,
+  .portfolio-card h3,
+  .paper-card h3,
+  .roadmap-card h3,
+  .visual-score-card h3,
+  .flow-card h3 {
+    font-size: 1.04rem;
+  }
+
+  .summary-card p,
+  .decision-card p,
+  .portfolio-card p,
+  .paper-card p,
+  .roadmap-card p,
+  .visual-score-card p,
+  .flow-card p {
+    margin: 8px 0 0;
+    color: var(--muted);
+  }
+
+  .summary-card ul,
+  .decision-card ul,
+  .portfolio-card ul,
+  .paper-card ul,
+  .roadmap-card ul,
+  .flow-card ul,
+  .bet-proof ul {
+    margin: 14px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+  }
+
+  .summary-card li,
+  .decision-card li,
+  .portfolio-card li,
+  .paper-card li,
+  .roadmap-card li,
+  .flow-card li,
+  .bet-proof li {
+    margin-bottom: 8px;
+  }
+
+  .bet-proof {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+  }
+
+  .bet-proof strong {
+    color: #d7ecff;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .decision-card .value {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .mix-row {
+    display: grid;
+    grid-template-columns: 132px 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 0.83rem;
+    color: var(--muted);
+  }
+
+  .mix-row strong {
+    color: #d7ecff;
+  }
+
+  .dual-track {
+    display: grid;
+    gap: 8px;
+  }
+
+  .dual-track span {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .dual-track em {
+    font-style: normal;
+    color: #d7ecff;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .paper-meta,
+  .roadmap-meta {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .paper-meta span,
+  .roadmap-meta span {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.08);
+    color: #d8e6f5;
+    font-size: 0.78rem;
+  }
+
+  .visual-score-grid {
+    grid-template-columns: 1.12fr 0.88fr;
+  }
+
+  .score-row {
+    display: grid;
+    grid-template-columns: 150px repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 0.82rem;
+  }
+
+  .score-row.header {
+    margin-top: 16px;
+    color: var(--faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+  }
+
+  .score-row strong {
+    color: #d7ecff;
+  }
+
+  .dotmeter {
+    display: flex;
+    gap: 6px;
+  }
+
+  .dotmeter span {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.14);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+  }
+
+  .dotmeter span.on.blue { background: rgba(95, 179, 255, 0.95); border-color: rgba(95, 179, 255, 0.95); }
+  .dotmeter span.on.green { background: rgba(56, 211, 159, 0.95); border-color: rgba(56, 211, 159, 0.95); }
+  .dotmeter span.on.amber { background: rgba(248, 196, 83, 0.95); border-color: rgba(248, 196, 83, 0.95); }
+  .dotmeter span.on.rose { background: rgba(251, 113, 133, 0.95); border-color: rgba(251, 113, 133, 0.95); }
+
+  .flow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .flow-card {
+    min-height: 0;
+    padding: 16px 16px 14px;
+    display: grid;
+    gap: 14px;
+    align-items: start;
+    border-radius: 20px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    background: rgba(255,255,255,0.025);
+  }
+
+  .flow-head {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .flow-step {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(39, 215, 208, 0.18), rgba(95, 179, 255, 0.22));
+    border: 1px solid rgba(95, 179, 255, 0.24);
+    color: #d7ecff;
+    font-weight: 800;
+    font-size: 0.86rem;
+  }
+
+  .flow-head h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .flow-head p {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .flow-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-content: start;
+  }
+
+  .flow-pills span {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.08);
+    color: #d8e6f5;
+    font-size: 0.8rem;
+  }
+
+  .flow-card.step-1 { border-color: rgba(95, 179, 255, 0.28); background: linear-gradient(180deg, rgba(95, 179, 255, 0.07), rgba(255,255,255,0.025)); }
+  .flow-card.step-2 { border-color: rgba(56, 211, 159, 0.28); background: linear-gradient(180deg, rgba(56, 211, 159, 0.06), rgba(255,255,255,0.025)); }
+  .flow-card.step-3 { border-color: rgba(248, 196, 83, 0.28); background: linear-gradient(180deg, rgba(248, 196, 83, 0.06), rgba(255,255,255,0.025)); }
+  .flow-card.step-4 { border-color: rgba(251, 113, 133, 0.28); background: linear-gradient(180deg, rgba(251, 113, 133, 0.06), rgba(255,255,255,0.025)); }
+
   .conclusion-box {
     border-radius: 22px;
     border: 1px solid rgba(148, 163, 184, 0.12);
@@ -550,6 +805,13 @@
     .conclusion,
     .rubric,
     .bet-grid,
+    .summary-grid,
+    .decision-grid,
+    .portfolio-grid,
+    .paper-grid,
+    .roadmap-grid,
+    .visual-score-grid,
+    .flow-grid,
     .lane-grid,
     .white-grid,
     .play-grid,
@@ -574,9 +836,12 @@
     h1 { font-size: 2.3rem; }
     .legend-row,
     .mini-row,
-    .compare-row {
+    .compare-row,
+    .score-row {
       grid-template-columns: 1fr;
     }
+
+    .flow-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -590,13 +855,13 @@
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Strategy Story · SNHU vs OpenAlex</div>
+          <div class="eyebrow">Strategic Priorities · SNHU Research</div>
           <h1>Where SNHU can matter next.</h1>
           <p class="lead">
-            This page is meant to answer the meeting brief directly: not just what SNHU has published,
-            but where it should concentrate next if the goal is stronger research reputation. The right
-            move is not “do more of everything.” It is to invest where SNHU is underweight, already
-            adjacent, and increasingly legible in the global map.
+            This analysis focuses on where SNHU can build the strongest next wave of research visibility.
+            The opportunity is not broad expansion. It is focused investment in areas where SNHU is
+            underweight relative to the benchmark corpus, close to existing strengths, and increasingly
+            visible in the research landscape.
           </p>
         </div>
         <div class="hero-aside">
@@ -623,6 +888,48 @@
     <section class="section">
       <div class="section-head">
         <div>
+          <div class="section-tag">Executive Read</div>
+          <h2>What leadership should take away in one screen.</h2>
+          <p>This section condenses the portfolio signal into a direct strategic read for leadership, deans, and research planning teams.</p>
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <article class="summary-card">
+          <h3>Double down on the identity shift.</h3>
+          <p>The most important change is the visible turn toward AI-heavy, cognition-heavy work.</p>
+          <ul>
+            <li>Neuroscience grows from 3 papers in 2019–2022 to 44 in 2023–2026.</li>
+            <li>Computer science adds 46 recent papers and becomes more explicitly AI-centered.</li>
+            <li>This is the clearest route to a sharper external research identity.</li>
+          </ul>
+        </article>
+
+        <article class="summary-card">
+          <h3>Turn the anchor into a platform.</h3>
+          <p>SNHU's online-learning strength is more valuable as a research platform than as a background brand asset.</p>
+          <ul>
+            <li>236 papers sit in the online and adult education anchor cluster.</li>
+            <li>That cluster already bridges education, psychology, and computing.</li>
+            <li>It gives SNHU a believable launch point for AI-in-learning and student-success work.</li>
+          </ul>
+        </article>
+
+        <article class="summary-card">
+          <h3>Avoid generic expansion.</h3>
+          <p>The right comparison is not “what is globally hot?” but “what is globally rising and already touching SNHU?”</p>
+          <ul>
+            <li>Remote white space is harder to staff, explain, and sustain.</li>
+            <li>Thin adjacent edges are easier to recruit into and easier to narrate externally.</li>
+            <li>That is why deep learning and methods support beat random new themes.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
           <div class="section-tag">Decision Rubric</div>
           <h2>What counts as a good bet here.</h2>
           <p>The point of this page is strategic prioritization. These are the filters that matter most if the goal is reputational lift rather than generic output growth.</p>
@@ -631,9 +938,74 @@
 
       <div class="rubric">
         <div class="rubric-card"><strong>Underweight gap</strong><span>SNHU should care about areas where the global literature is larger than its own footprint, but not so distant that the effort becomes a cold start.</span></div>
-        <div class="rubric-card"><strong>Recent growth</strong><span>Rapidly accelerating fields matter because they shape perception of where a university is heading, not just where it has been.</span></div>
-        <div class="rubric-card"><strong>Citation proof</strong><span>The strongest bets are not just novel. They already show evidence that papers in the zone can travel and accumulate attention.</span></div>
+        <div class="rubric-card"><strong>Recent growth</strong><span>Rapidly accelerating fields matter because they shape perception of where a university is heading and where the external conversation is moving.</span></div>
+        <div class="rubric-card"><strong>Citation proof</strong><span>The strongest bets are novel enough to differentiate and established enough to show that work in the zone can travel and accumulate attention.</span></div>
         <div class="rubric-card"><strong>Adjacency</strong><span>The best strategic moves sit near current strengths in the embedding map, so they can be built by extending existing conversations.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Portfolio Diagnostic</div>
+          <h2>Where SNHU is overweight, underweight, and structurally promising.</h2>
+          <p>This view compares SNHU against the mapped benchmark corpus used for the analysis. The goal is not to mirror that field mix exactly, but to see clearly where SNHU is thin, where it is already credible, and where the strongest adjacent opportunities appear.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <h3>Biggest underweight gaps versus the comparison universe</h3>
+          <div class="mix-row">
+            <strong>Neuroscience</strong>
+            <div class="dual-track">
+              <span><em>SNHU</em><div class="track"><div class="fill" style="width: 33%"></div></div><strong>6.6%</strong></span>
+              <span><em>Other</em><div class="track"><div class="fill green" style="width: 100%"></div></div><strong>20.0%</strong></span>
+            </div>
+          </div>
+          <div class="mix-row">
+            <strong>Psychology</strong>
+            <div class="dual-track">
+              <span><em>SNHU</em><div class="track"><div class="fill" style="width: 41%"></div></div><strong>8.2%</strong></span>
+              <span><em>Other</em><div class="track"><div class="fill green" style="width: 100%"></div></div><strong>20.0%</strong></span>
+            </div>
+          </div>
+          <div class="mix-row">
+            <strong>Business</strong>
+            <div class="dual-track">
+              <span><em>SNHU</em><div class="track"><div class="fill" style="width: 49%"></div></div><strong>9.7%</strong></span>
+              <span><em>Other</em><div class="track"><div class="fill green" style="width: 100%"></div></div><strong>20.0%</strong></span>
+            </div>
+          </div>
+          <div class="mix-row">
+            <strong>Computer Science</strong>
+            <div class="dual-track">
+              <span><em>SNHU</em><div class="track"><div class="fill" style="width: 69%"></div></div><strong>13.9%</strong></span>
+              <span><em>Other</em><div class="track"><div class="fill green" style="width: 100%"></div></div><strong>20.0%</strong></span>
+            </div>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>What SNHU already owns</h3>
+          <p>The portfolio is not thin everywhere. Several strengths already give the institution a credible right to move into the recommended zones.</p>
+          <ul>
+            <li>Social sciences remain the largest SNHU field with 208 papers.</li>
+            <li>Computer science is already substantial with 116 papers, especially in AI and information systems.</li>
+            <li>Online and adult education remains the strongest stable anchor in the map.</li>
+            <li>Recent business topics show that translation into enterprise problems is already happening.</li>
+          </ul>
+        </article>
+
+        <article class="portfolio-card">
+          <h3>What this means strategically</h3>
+          <p>The right move is not to imitate the universe field mix. It is to close the most meaningful nearby gaps while preserving SNHU's own anchor.</p>
+          <ul>
+            <li>Neuroscience and psychology matter because they make the new frontier sharper.</li>
+            <li>Computer science matters because it supplies the reusable methods and systems layer.</li>
+            <li>Business and learning innovation matter because they make the research easier to explain and apply.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -642,7 +1014,7 @@
         <div>
           <div class="section-tag">Act I · Hinge Points</div>
           <h2>The portfolio should tilt toward three bets.</h2>
-          <p>These are the bets that best satisfy the meeting intent: plausible future research opportunities that can increase visibility because they are both adjacent and underdeveloped.</p>
+          <p>These three bets offer the best combination of adjacency, growth, distinctiveness, and external legibility.</p>
         </div>
       </div>
 
@@ -674,6 +1046,14 @@
             <span class="tag">Computational neuroscience</span>
             <span class="tag">Cognition and AI</span>
           </div>
+          <div class="bet-proof">
+            <strong>Why it clears the bar</strong>
+            <ul>
+              <li>Recent output jumps from 3 papers in 2019–2022 to 44 papers in 2023–2026.</li>
+              <li>The dominant recent topic is <em>Embodied and Extended Cognition</em>, accounting for 25 recent papers.</li>
+              <li>This is the clearest signal that SNHU is moving toward a more conceptually distinctive frontier rather than simply producing more volume.</li>
+            </ul>
+          </div>
         </article>
 
         <article class="bet-card">
@@ -702,6 +1082,14 @@
             <span class="tag">AI, Cybersecurity, and Automation</span>
             <span class="tag">Human-centered robotics</span>
             <span class="tag">Machine perception</span>
+          </div>
+          <div class="bet-proof">
+            <strong>Why it clears the bar</strong>
+            <ul>
+              <li>Computer science remains one of SNHU's largest engines: 116 papers overall and 46 papers in 2023–2026.</li>
+              <li>The field is shifting from older web-and-security work toward XAI, privacy-preserving systems, adaptive learning, and AI planning.</li>
+              <li>This is the enabling layer that can strengthen both the learning story and the business translation story.</li>
+            </ul>
           </div>
         </article>
 
@@ -732,6 +1120,14 @@
             <span class="tag">Digital transformation</span>
             <span class="tag">Service adoption and trust</span>
           </div>
+          <div class="bet-proof">
+            <strong>Why it clears the bar</strong>
+            <ul>
+              <li>The field is not the fastest mover, but it gives SNHU a translation layer into enterprise-facing strategy, operations, and digital adoption.</li>
+              <li>Recent business topics now include big data, digital finance, AI-driven HR, and supply-chain resilience.</li>
+              <li>Its strongest historical papers already travel well, which helps connect technical capacity to legible external demand.</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
@@ -741,7 +1137,7 @@
         <div>
           <div class="section-tag">Act II · Why These Bets Win</div>
           <h2>The best opportunities are adjacent, not random.</h2>
-          <p>This is the key design logic Anand's page communicates well: good strategy stories do not merely list “interesting topics.” They show why those topics are plausibly reachable from where the institution already sits.</p>
+          <p>The strongest opportunities are the ones SNHU can credibly enter from its current position, rather than remote areas that would require a cold-start research identity.</p>
         </div>
       </div>
 
@@ -771,7 +1167,7 @@
             </div>
             <div class="legend-row">
               <strong>AI + cyber</strong>
-              <span>The enabling platform. It is what lets multiple SNHU stories reinforce one another instead of becoming isolated projects.</span>
+              <span>The enabling platform. It allows multiple SNHU priorities to reinforce one another rather than becoming isolated projects.</span>
             </div>
             <div class="legend-row">
               <strong>Business + digital</strong>
@@ -795,9 +1191,176 @@
     <section class="section">
       <div class="section-head">
         <div>
-          <div class="section-tag">Act III · Collaboration Inside SNHU</div>
-          <h2>The internal leverage is cross-disciplinary, not just more of the same.</h2>
-          <p>The right collaborations are short-distance handshakes between existing strengths. They serve the meeting goal because they create realistic pathways to the next wave of publishable work.</p>
+          <div class="section-tag">Strategic Evidence</div>
+          <h2>Why these recommendations are believable.</h2>
+          <p>These signals show why the recommended priorities emerge from the portfolio evidence rather than being imposed on it.</p>
+        </div>
+      </div>
+
+      <div class="decision-grid">
+        <article class="decision-card">
+          <h3>Momentum is concentrated.</h3>
+          <div class="value">329</div>
+          <p>SNHU papers appear in 2023–2026 alone, and the strongest lift sits in neuroscience and computer science rather than across every field equally.</p>
+          <ul>
+            <li>Neuroscience contributes 44 recent papers.</li>
+            <li>Computer science contributes 46 recent papers.</li>
+            <li>That concentration makes the identity shift easier to see and easier to explain.</li>
+          </ul>
+        </article>
+
+        <article class="decision-card">
+          <h3>The institutional anchor is real.</h3>
+          <div class="value">236</div>
+          <p>Online and adult education is the clearest stable cluster in the map and the strongest bridge into future learning innovation.</p>
+          <ul>
+            <li>The cluster is larger for SNHU than for the benchmark corpus used in this analysis.</li>
+            <li>It already connects education, psychology, assessment, and digital systems.</li>
+            <li>That is why AI-for-learning is a plausible platform, not an aspirational slogan.</li>
+          </ul>
+        </article>
+
+        <article class="decision-card">
+          <h3>The nearest white space is actionable.</h3>
+          <div class="value">0.90</div>
+          <p>Deep learning and computer vision score high on proximity, which is exactly what makes a gap worth acting on.</p>
+          <ul>
+            <li>SNHU has 6 papers there versus 196 in the benchmark corpus.</li>
+            <li>The zone sits close enough to current AI work to be credible for hiring and collaboration.</li>
+            <li>It is a better move than chasing disconnected blank areas with no current foothold.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Visual Scoreboard</div>
+          <h2>How the priorities compare at a glance.</h2>
+          <p>This section compresses the decision logic into a faster visual read: which priorities are best suited for immediate scale, which are enabling platforms, and which are best treated as next-wave expansion.</p>
+        </div>
+      </div>
+
+      <div class="visual-score-grid">
+        <article class="visual-score-card">
+          <h3>Priority heatmap</h3>
+          <p>More filled markers indicate a stronger case on that dimension.</p>
+          <div class="score-row header">
+            <span>Priority</span>
+            <span>Adjacency</span>
+            <span>Growth</span>
+            <span>Visibility</span>
+            <span>Buildability</span>
+          </div>
+          <div class="score-row">
+            <strong>Neuro + cognition</strong>
+            <div class="dotmeter"><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span></span></div>
+            <div class="dotmeter"><span class="on green"></span><span class="on green"></span><span class="on green"></span><span class="on green"></span><span class="on green"></span></div>
+            <div class="dotmeter"><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span></div>
+            <div class="dotmeter"><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span></span><span></span></div>
+          </div>
+          <div class="score-row">
+            <strong>AI platform</strong>
+            <div class="dotmeter"><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span></div>
+            <div class="dotmeter"><span class="on green"></span><span class="on green"></span><span class="on green"></span><span class="on green"></span><span></span></div>
+            <div class="dotmeter"><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span></span></div>
+            <div class="dotmeter"><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span></div>
+          </div>
+          <div class="score-row">
+            <strong>Business + digital</strong>
+            <div class="dotmeter"><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on green"></span><span class="on green"></span><span></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span></span></div>
+            <div class="dotmeter"><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span></span></div>
+          </div>
+          <div class="score-row">
+            <strong>Deep learning</strong>
+            <div class="dotmeter"><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span class="on blue"></span><span></span></div>
+            <div class="dotmeter"><span class="on green"></span><span class="on green"></span><span class="on green"></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on rose"></span><span class="on rose"></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="score-row">
+            <strong>Methods backbone</strong>
+            <div class="dotmeter"><span class="on blue"></span><span class="on blue"></span><span></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on green"></span><span></span><span></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on amber"></span><span class="on amber"></span><span class="on amber"></span><span></span><span></span></div>
+            <div class="dotmeter"><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span class="on rose"></span><span></span></div>
+          </div>
+        </article>
+
+        <article class="visual-score-card">
+          <h3>How one investment reinforces another</h3>
+          <p>The strongest strategy is cumulative: each layer makes the next one easier to explain, staff, and scale.</p>
+          <div class="flow-grid">
+            <article class="flow-card step-1">
+              <div class="flow-head">
+                <span class="flow-step">1</span>
+                <div>
+                  <h3>Flagship themes</h3>
+                  <p>Choose the stories SNHU wants to be known for externally.</p>
+                </div>
+              </div>
+              <div class="flow-pills">
+                <span>AI + cognition</span>
+                <span>AI for learning</span>
+                <span>Digital strategy</span>
+              </div>
+            </article>
+            <article class="flow-card step-2">
+              <div class="flow-head">
+                <span class="flow-step">2</span>
+                <div>
+                  <h3>Shared capabilities</h3>
+                  <p>Invest in the technical and methodological support that multiple themes can reuse.</p>
+                </div>
+              </div>
+              <div class="flow-pills">
+                <span>Privacy + XAI</span>
+                <span>Data workflows</span>
+                <span>Methods support</span>
+              </div>
+            </article>
+            <article class="flow-card step-3">
+              <div class="flow-head">
+                <span class="flow-step">3</span>
+                <div>
+                  <h3>Visible outputs</h3>
+                  <p>Turn the investment into tangible signals that external audiences can actually see.</p>
+                </div>
+              </div>
+              <div class="flow-pills">
+                <span>Paper clusters</span>
+                <span>Named centers</span>
+                <span>External partnerships</span>
+              </div>
+            </article>
+            <article class="flow-card step-4">
+              <div class="flow-head">
+                <span class="flow-step">4</span>
+                <div>
+                  <h3>Institutional effect</h3>
+                  <p>The long-run payoff is a portfolio that is easier to explain, recruit around, and scale.</p>
+                </div>
+              </div>
+              <div class="flow-pills">
+                <span>Sharper identity</span>
+                <span>Better recruitment</span>
+                <span>Compounding reputation</span>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Cross-School Leverage</div>
+          <h2>The strongest partnerships are cross-disciplinary.</h2>
+          <p>The most productive partnerships are the ones that connect established strengths to adjacent frontier work with clear external relevance.</p>
         </div>
       </div>
 
@@ -839,6 +1402,114 @@
             <span class="tag">AI systems</span>
           </div>
           <div class="build">What they could build next: a hub for personalized learning, tutoring systems, intelligent feedback, and evidence-rich digital pedagogy.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Priority Ladder</div>
+          <h2>How to sequence the portfolio.</h2>
+          <p>Not every opportunity belongs in the same investment bucket. This view separates immediate scale bets from enabling capabilities and medium-term expansion moves.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-grid">
+        <article class="roadmap-card">
+          <h3>Scale now</h3>
+          <p>These areas already have enough base, adjacency, and narrative clarity to support immediate institutional signaling.</p>
+          <div class="roadmap-meta">
+            <span>AI + cognition</span>
+            <span>AI for learning</span>
+            <span>Digital strategy</span>
+          </div>
+          <ul>
+            <li>Promote them as named priorities rather than diffuse activity.</li>
+            <li>Use them to organize seed funding, events, and external storytelling.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <h3>Build next</h3>
+          <p>These are the clearest adjacent expansions that deepen the research profile without forcing a full repositioning.</p>
+          <div class="roadmap-meta">
+            <span>Deep learning</span>
+            <span>Computer vision</span>
+            <span>Privacy + XAI</span>
+          </div>
+          <ul>
+            <li>Best suited for targeted hiring, partnership-building, and cluster growth.</li>
+            <li>They reinforce the technical spine already emerging in the map.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <h3>Enable across all bets</h3>
+          <p>These are not headline themes, but they determine whether the chosen priorities compound over time.</p>
+          <div class="roadmap-meta">
+            <span>Methods support</span>
+            <span>Research software</span>
+            <span>Reproducibility</span>
+          </div>
+          <ul>
+            <li>Raise quality across education, psychology, business, and social science.</li>
+            <li>Make future outputs easier to scale, compare, and translate externally.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Representative Evidence</div>
+          <h2>The recommendations are grounded in actual papers, not only cluster labels.</h2>
+          <p>This section makes the story more concrete by showing the kind of work already present in the portfolio. The point is not that each title is a flagship. It is that the bets have visible textual substance behind them.</p>
+        </div>
+      </div>
+
+      <div class="paper-grid">
+        <article class="paper-card">
+          <h3>Neuro + cognition proof</h3>
+          <p><strong>A Systematic Literature Review of the Application of Information Communication Technology for Visually Impaired People</strong> shows this zone can already produce cited, method-rich work.</p>
+          <div class="paper-meta">
+            <span>64 cites</span>
+            <span>2016</span>
+            <span>Tactile and Sensory Interactions</span>
+          </div>
+          <ul>
+            <li>More recent titles shift toward embodied cognition, constraint-based memory models, and neuroethics.</li>
+            <li>That gives the field both a practical track and a more conceptually distinctive frontier track.</li>
+          </ul>
+        </article>
+
+        <article class="paper-card">
+          <h3>AI platform proof</h3>
+          <p><strong>A Framework of Cognitive Situation Modeling and Recognition</strong> and <strong>Insider threat detection using situation-aware MAS</strong> show the older technical base that current AI work can build on.</p>
+          <div class="paper-meta">
+            <span>35 cites</span>
+            <span>26 cites</span>
+            <span>AI planning + security</span>
+          </div>
+          <ul>
+            <li>Recent additions include XAI, privacy-preserving learning, AI-powered tutoring, and adaptive learning systems.</li>
+            <li>The bet is believable because the field is moving forward from an existing base, not appearing from nowhere.</li>
+          </ul>
+        </article>
+
+        <article class="paper-card">
+          <h3>Learning-innovation proof</h3>
+          <p><strong>The Online First-Year Experience: Defining and Illustrating a New Reality</strong> and <strong>College for America: Student-Centered, Competency-Based Education</strong> show the anchor is already institutionally legible.</p>
+          <div class="paper-meta">
+            <span>32 cites</span>
+            <span>20 cites</span>
+            <span>Online learning + competency-based education</span>
+          </div>
+          <ul>
+            <li>This makes AI-supported pedagogy, tutoring, and student-success work easier to justify externally.</li>
+            <li>The opportunity is to connect this anchor more tightly to the newer computing frontier.</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -929,11 +1600,68 @@
       </div>
 
       <div class="play-grid">
-        <article class="play-card"><div class="num">1</div><h3>Build an AI &amp; Cognition research spine.</h3><p>Turn the neuroscience-computer science convergence into a named institutional platform, not just a scattered topic cluster.</p></article>
-        <article class="play-card"><div class="num">2</div><h3>Use AI as a shared capability.</h3><p>Connect it to business, education, and health-adjacent work so the strongest technical capacity reinforces multiple reputational stories.</p></article>
-        <article class="play-card"><div class="num">3</div><h3>Recruit into deep learning and computer vision.</h3><p>That is the clearest near-neighbor expansion zone in the current map and the cleanest technical white-space move.</p></article>
-        <article class="play-card"><div class="num">4</div><h3>Turn online learning into a research edge.</h3><p>SNHU already owns the institutional legitimacy here; the next step is to make it a stronger scholarly differentiator.</p></article>
-        <article class="play-card"><div class="num">5</div><h3>Raise methods quality across the portfolio.</h3><p>Better qualitative and quantitative infrastructure will improve the visibility and durability of work in every adjacent growth area.</p></article>
+        <article class="play-card"><div class="num">1</div><h3>Name the AI + cognition bet.</h3><p>Turn the neuroscience-computer science convergence into a visible institutional theme with seed funding, a paper series, and external signaling.</p></article>
+        <article class="play-card"><div class="num">2</div><h3>Use AI as shared infrastructure.</h3><p>Support privacy, explainability, tutoring, analytics, and automation as reusable capability instead of isolated one-off projects.</p></article>
+        <article class="play-card"><div class="num">3</div><h3>Hire into the nearest white space.</h3><p>Prioritize deep learning and computer vision because they deepen the existing AI platform without requiring a cold-start research identity.</p></article>
+        <article class="play-card"><div class="num">4</div><h3>Turn online learning into publishable advantage.</h3><p>Use the institutional anchor to generate more visible scholarship on AI-supported learning, feedback systems, and student success.</p></article>
+        <article class="play-card"><div class="num">5</div><h3>Fund methods and research software.</h3><p>Raise rigor across education, psychology, social science, and business so future growth compounds rather than fragmenting.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="section-tag">Execution Horizon</div>
+          <h2>What this could look like over the next three horizons.</h2>
+          <p>These horizons translate the priorities into a practical sequence of actions without pretending to be a formal operating plan.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-grid">
+        <article class="roadmap-card">
+          <h3>Next 90 days</h3>
+          <p>Choose the research spine and make it visible.</p>
+          <div class="roadmap-meta">
+            <span>Theme selection</span>
+            <span>Seed grants</span>
+            <span>Convening</span>
+          </div>
+          <ul>
+            <li>Name AI + cognition and AI-for-learning as the two top-level stories.</li>
+            <li>Run a short cross-campus convening around faculty already near these zones.</li>
+            <li>Start a lightweight internal paper or working-group series to create visible continuity.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <h3>Next 12 months</h3>
+          <p>Build enough infrastructure for the story to compound.</p>
+          <div class="roadmap-meta">
+            <span>Hiring</span>
+            <span>Shared methods</span>
+            <span>Pilot outputs</span>
+          </div>
+          <ul>
+            <li>Hire into deep learning / vision and one methods-oriented role that can support multiple groups.</li>
+            <li>Create shared support for data workflows, reproducibility, and AI evaluation.</li>
+            <li>Target a visible cluster of papers in AI-supported learning and cognition-adjacent computing.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <h3>Next 24-36 months</h3>
+          <p>Turn the themes into externally legible platforms.</p>
+          <div class="roadmap-meta">
+            <span>Institutional signaling</span>
+            <span>Partnerships</span>
+            <span>Compounding reputation</span>
+          </div>
+          <ul>
+            <li>Package the strongest outputs into a coherent external narrative rather than isolated publications.</li>
+            <li>Use the online-learning anchor to support partnership-led work in AI tutoring, student success, and digital pedagogy.</li>
+            <li>Measure success by whether future work clusters more tightly around the chosen themes.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -941,8 +1669,8 @@
       <div class="section-head">
         <div>
           <div class="section-tag">Conclusion</div>
-          <h2>The strategy is to become sharper, not larger.</h2>
-          <p>The meeting brief is about identifying research opportunities that can improve reputation. The map suggests SNHU should avoid broad generic expansion and instead become more cumulative in a few zones where it already has momentum.</p>
+          <h2>The strategic goal is sharper concentration, not broader spread.</h2>
+          <p>The portfolio is most convincing when it presents SNHU as a place where AI, cognition, learning innovation, and digitally mediated practice reinforce one another. That is a clearer and more defensible posture than broad thematic expansion.</p>
         </div>
       </div>
 
@@ -976,13 +1704,13 @@
       </div>
 
       <div class="source-grid">
-        <article class="source-card"><h3>Map evidence</h3><p>SNHU papers are positioned against a larger OpenAlex universe so the strategy can separate local strength from global saturation.</p></article>
+        <article class="source-card"><h3>Map evidence</h3><p>SNHU papers are positioned against a broader benchmark corpus so the strategy can separate local strength from external competition.</p></article>
         <article class="source-card"><h3>Comparative logic</h3><p>Recommendations emphasize underweight gaps, recent growth, citation signal, and semantic adjacency rather than generic prominence alone.</p></article>
         <article class="source-card"><h3>Limitation</h3><p>The page is interpretive by design. It is strongest when read as a prioritization tool, then checked against the live map and underlying paper lists.</p></article>
       </div>
     </section>
 
-    <div class="footer">Generated with embedumap &amp; Gemini · redesigned as an executive strategy story</div>
+    <div class="footer">SNHU research strategy analysis based on embedding-space movement, benchmark comparison, and portfolio evidence.</div>
   </div>
 </body>
 </html>
